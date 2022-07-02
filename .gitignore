@@ -3,3 +3,7 @@
 ################################################################################
 
 /SimpleAPI/bin/Debug/net5.0
+/SimpleAPI/obj
+/.vs
+/SimpleAPI/.vs/SimpleAPI
+/SimpleAPI/SimpleAPI.sln
