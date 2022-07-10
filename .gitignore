@@ -7,3 +7,6 @@
 /.vs
 /SimpleAPI/.vs/SimpleAPI
 /SimpleAPI/SimpleAPI.sln
+/SimpleAPI/.config
+/SimpleAPI/bin/Release/net5.0
+/SimpleAPI/Properties
