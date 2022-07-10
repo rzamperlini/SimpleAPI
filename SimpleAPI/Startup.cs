@@ -29,7 +29,7 @@ namespace SimpleAPI
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WheatherForecasts", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SimpleAPI", Version = "v1" });
             });
         }
 
