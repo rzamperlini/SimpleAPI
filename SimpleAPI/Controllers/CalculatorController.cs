@@ -20,16 +20,37 @@ namespace SimpleAPI.Controllers
 
         [HttpGet]
         [Route("/Sum")]
-        public Int32 Sum(Int32 a, Int32 b)
+        public ObjectResult Sum(float a, float b)
         {
-            return a + b;
+            return Ok(a + b);
         }
 
         [HttpGet]
         [Route("/Product")]
-        public Int32 Product(Int32 a, Int32 b)
+        public ObjectResult Product(float a, float b)
         {
-            return a * b;
+            return Ok(a * b);
+        }
+
+        [HttpGet]
+        [Route("/Subtract")]
+        public ObjectResult Subtract(float a, float b)
+        {
+            return Ok(a - b);
+        }
+
+        [HttpGet]
+        [Route("/Division")]
+        public ObjectResult Division(float a, float b)
+        {
+            float result = 0;
+
+            if (b != 0)
+                result = a / b;
+            else
+                return BadRequest("The divisor must be non-zero.");
+
+            return Ok(result);
         }
     }
 }
